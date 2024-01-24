@@ -1,0 +1,144 @@
+.box1{
+    background-color: #DCDCDC;
+    grid-area : box1;
+    border-bottom : 3px solid black;
+   
+}
+.nameTitle{
+    border :3px inset black;
+    margin-bottom :5px;
+
+}
+.personPhoto{
+    border :3px inset black;
+    padding: 0px;
+    margin-bottom :5px;
+}
+.personPhoto2{
+    border :3px inset black;
+    padding: 0px;
+    margin-bottom :5px;
+}
+
+
+.myName{
+    border :3px inset black;
+}
+.nameTitle p{
+    text-align: center;
+}
+.myName p{
+    text-align: center;
+}
+
+.introduce h2{
+    line-height: 0.5em;
+}
+.introduce{
+margin: 0px;
+padding: 0px;
+text-align: right;
+
+}
+
+
+.box2{
+    background-color: #DCDCDC;
+    grid-area : box2;
+    border-bottom : 3px solid black;
+}
+
+.box3{
+    background-color: #DCDCDC;
+    grid-area : box3;
+    border-bottom:  3px solid black;
+    border-right: 3px solid black;
+}
+.box4{
+    background-color: #DCDCDC;
+    border-bottom:  3px solid black;
+    grid-area : box4;
+}
+#wrapper{
+    width:800px;
+    height: 750px;
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    grid-template-rows: minmax(100px,0.8fr);
+    padding:0px;
+    margin :10px auto;
+    
+    grid-template-areas :
+    "box1 box2"
+    "box3 box4"
+    "box3 box4"
+    
+}
+.car
+.myImformation{
+    clear:left;
+    width:600px;
+    height: 400px;
+    clear:left;
+}
+.skill{
+    width: 100%;
+    height: 330px;
+    padding-right :40px;
+    
+    display: flex;
+    justify-content: center;
+    
+   
+    
+}
+.skill ul{
+    margin:3px;
+}
+.skillList li{
+    list-style: none;
+}
+.introduce span{
+    font-weight: bold;
+}
+.skillList p{
+font-weight: bold;
+}
+
+.detailInformation{
+padding-left: 5px;
+
+}
+.personPhoto2{
+display: none;
+}
+.photoInline{
+display:flex;
+}
+#photo1{
+transform : translateZ(10px);
+z-index: 1;
+
+}
+
+#photo3{
+transform: translateX(-145px);
+z-index: -5; 
+border :3px inset black;
+padding: 0px;
+margin-bottom :5px;
+}
+#photo4{
+transform: translateX(-290px);
+z-index: -6;
+border :3px inset black;
+padding: 0px;
+margin-bottom :5px;
+}
+#photo5{
+transform: translateX(-435px);
+z-index: -7;
+border :3px inset black;
+padding: 0px;
+margin-bottom :5px;
+}

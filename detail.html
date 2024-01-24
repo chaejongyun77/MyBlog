@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="./css/nav.css">
+    <link rel="styleSheet" href="./css/contents.css">
+    <link rel="styleSheet" href="./css/footer.css">
+    <link rel="styleSheet" href="./css/detail.css">
+    <link rel="icon" href="./images/favicon.ico">
+ 
+    <style>
+
+   
+ 
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="logo">
+
+                <a href="./home.html"> Blog</a>
+
+            </div>
+
+            <nav id="navi">
+                <ul id="to  pmenu">
+                    <li><a href="./home.html"> HOME</a></li>
+                    <li><a href="./about.html"> ABOUT</a></li>
+                    <li><a href="./posts.html"> POSTS</a></li>
+                    <li><a href="./contact.html"> CONTACT</a></li>
+                    <li><a href="./login.html"> LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme"> <!-- 페이지 제목-->
+                
+                <div class ="themeButton">
+                    <button class="previous"><img src="./images/left.png" class="previousImage" height="60px" width="60px">  </button>
+                    <h1>My Blog</h1>
+                    <button class="next"><img src="./images/right.png" height="60px" width="60px"> </button>
+                </div>
+               
+                <span ></span>
+            </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    </header>
+<main class="contents">
+        
+    <div class="explain">
+        
+    <h2>스택(Stack)과 힙(Heap)은 무엇일까?</h2>
+    <h4>[자료구조]</h4>
+    <div class="user">
+        <img src="./images/minji.jpg" height="40" width="45" class="userPhoto"><strong >&nbsp;민지</strong>
+    <p> 2024.01.09 &nbsp; 15:39 &nbsp; 조회 : 6,266 </p>
+    </div>
+    <hr>
+    <h3> 1. 스택이란?</h3>
+    <p>스택은 한쪽 끝에서만 데이터를 넣고 뺄 수 있는 제한적으로 접근할 수 있는 후입선출(Last-In-First-Out) 형태의 선형 자료구조이다.</p>
+    <h3> 2. 스택의 작동 원리</h3>
+    <p>스택은 기본적으로 후입선출(나중에 들어온 데이터가 가장 먼저 나가는) 구조로 이루어져 있다.</p>
+    <img src="./images/stack.png" width="100%" height="650" >
+    <br>
+    <h3> 3. 스택 제공 연산 종류</h3>
+    <ul>
+        <li> pop() : 스택에서 가장 위에 있는 항목을 제거한다.</li>
+        <li> push(item): item 하나를 스택의 가장 윗 부분에 추가한다.</li>
+        <li> peek() : 스택의 가장 위에 있는 항목을 반환한다.</li>
+        <li> isEmpty() : 스택이 비어 있을 때 true를 반환한다.</li>
+    </ul>
+            
+
+    <div class="heart">
+        <button class="heartButton"> <img src="./images/heart.jpg" height="30" width="30"></button>
+         <div class="count"><span class="countNumber">0</span></div>
+    </div>
+    <br>
+    <br>
+    <div class="pageButton">
+        <button class="previousButton">Previous Page</button>
+        <a href="./posts.html"><button class="list"> 목록으로 </button></a>
+        <button class="nextButton">Next Page</button>
+    </div>
+</div>
+<hr>  
+</main>
+
+<footer>
+    
+    <div id="icons">
+        <ul class = "iconUl">
+            <li><img src="./images/twitter.png" height="50" width="50"></li>
+            <li><img src="./images/insta.jpeg" height="50" width="50"></li>
+            <li><img src="./images/talk.png" height="50" width="50"></li>
+            <li><img src="./images/line.png" height="50" width="50"></li>
+        </ul>
+    </div>
+</footer>
+    <script>
+        let i=1;
+        let heartButton = document.querySelector(".heartButton");
+        let countDiv = document.querySelector(".countNumber");
+        
+        heartButton.addEventListener("click",()=>{
+            if(i>1){
+                alert("아이디당 1번만 추천이 가능합니다.")
+            }
+            if(i==1){
+            countDiv.innerText = `${i++}`;
+        }
+        })
+
+    </script>
+<script src="./js/nav.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="styleSheet" href="./css/nav.css">
+    <link rel="styleSheet" href="./css/contents.css">
+    <link rel="styleSheet" href="./css/footer.css">
+   <link rel="icon" href="./images/favicon.ico"> <!-- 파비콘-->
+ 
+    <style>
+     
+        .view:hover{
+            background-color: #FF8200;
+            cursor: pointer;
+        }
+        #post1{
+            display:none;
+        }
+      
+       
+    </style>
+    
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="logo"> <!-- 로고 아이콘-->
+
+                <a href="./home.html"> Blog</a>
+
+            </div>
+
+            <nav id="navi"> <!-- 네비게이션 바-->
+                <div class="navul">
+                <ul id="topmenu">
+                    <li><a href="./home.html"> HOME</a></li>
+                    <li><a href="./about.html"> ABOUT</a></li>
+                    <li><a href="./posts.html"> POSTS</a></li>
+                    <li><a href="./contact.html"> CONTACT</a></li>
+                    <li><a href="./login.html"> LOGIN</a></li>
+                </ul>
+            </div>
+            </nav>
+
+            <div class="theme"> <!-- 페이지 제목-->
+                
+                <div class ="themeButton">
+                   <button class="previous"><img src="./images/left.png" class="previousImage" height="60px" width="60px">  </button>
+                    <h1>JongYun's &nbsp; Blog</h1>
+                   <button class="next"><img src="./images/right.png" height="60px" width="60px"> </button>
+                </div>
+               
+                
+            </div>
+    </div>
+
+
+    <br>
+    <br>
+    </header>
+
+    <main class="contents"> <!-- 본문 내용-->
+
+
+        <div class="explain">
+
+            <span>
+                <h2><a href="./detail.html"> 스택(Stack)과 힙(Heap)은 무엇일까?</a> </h2>
+            </span>
+
+            <span>
+                <h4> [자료구조]<h4>
+            </span>
+
+            <h6>Posted by 2024-01-18 09:05</h6>
+
+            <hr>
+            <span>
+                <h2><a href="#">트리(Tree) 이란 무엇일까?</a> </h2>
+            </span>
+
+            <span>
+                <h4> [자료구조] <h4>
+            </span>
+
+            <h6>Posted by 2024-01-18 09:07</h6>
+
+            <hr>
+            <span>
+                <h2><a href="#"> 버블정렬, 선택정렬, 삽입정렬, 퀵정렬은 무엇일까? </a> </h2>
+            </span>
+
+            <span>
+                <h4> [알고리즘] <h4>
+            </span>
+
+            <h6>Posted by 2024-09-10 15:30</h6>
+           
+            <hr>
+            <div id="post1">
+                <span>
+                    <h2><a href="./detail.html"> 배열(Array) 이란 무엇일까?</a> </h2>
+                </span>
+    
+                <span>
+                    <h4> [자료구조]<h4>
+                </span>
+    
+                <h6>Posted by 2024-01-18 09:05</h6>
+    
+                <hr>
+
+                <span>
+                    <h2><a href="./detail.html"> 해쉬 테이블(Hash Table) 이란 무엇일까? </a> </h2>
+                </span>
+    
+                <span>
+                    <h4> [자료구조]<h4>
+                </span>
+    
+                <h6>Posted by 2024-01-18 09:05</h6>
+    
+                <hr>
+
+                <span>
+                    <h2><a href="./detail.html"> 그래프(Graph)란     무엇일까?</a> </h2>
+                </span>
+    
+                <span>
+                    <h4> [자료구조]<h4>
+                </span>
+    
+                <h6>Posted by 2024-01-18 09:05</h6>
+    
+                <hr>
+                
+            </div>
+
+        </div>
+        <div id="viewP"> <!-- 포스트 모두보기-->
+            <input type="button" id="viewAll" value = "작성글 더 보기" onclick="viewAllPosts()"/> 
+        
+       
+       </div>
+        
+    </main>
+    <hr>
+
+    <footer> <!-- 하단 아이콘-->
+       
+        <div id="icons">
+            <ul class = "iconUl">
+                <li><img src="./images/twitter.png" height="50" width="50"></li>
+                <li><img src="./images/insta.jpeg" height="50" width="50"></li>
+                <li><img src="./images/talk.png" height="50" width="50"></li>
+                <li><img src="./images/line.png" height="50" width="50"></li>
+            </ul>
+        </div>
+    
+    </footer>
+    <script>
+        let postDiv = document.querySelector("#viewP");
+        let postButton = document.querySelector("#viewAll");
+        let post1Div = document.querySelector("#post1");
+        
+
+        postButton.addEventListener("click",()=>{
+            post1Div.style.display="block";
+           
+            postButton.style.display="none";
+        })
+
+        </script>
+
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>

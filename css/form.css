@@ -1,0 +1,35 @@
+.frm{
+    width:600px;
+    height:600px;
+    margin:20px auto;
+}
+
+#formContent{
+    width:300px;
+    height:500px;
+    margin : 20px auto;
+}
+.frm div{
+    width:300px;
+    height:500px;
+}
+
+.frm div input{
+    width:300px;
+    height:50px;
+    padding: auto;
+    margin: 15px auto;
+}
+input[type=submit]{
+    font-size:20px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    color:black;
+    font-weight: bold;
+}
+input[type=submit]:hover{
+    background-color: slategrey;
+    border:none;
+    cursor: pointer;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="./css/nav.css">
+    <link rel="styleSheet" href="./css/contents.css">
+    <link rel="styleSheet" href="./css/footer.css">
+    <link rel="styleSheet" href="./css/form.css">
+    <link rel="icon" href="./images/favicon.ico">
+ 
+    <style>
+        #formContent legend{
+            font-weight: bold;
+            text-align: center;
+        }
+        .loginComplete{
+            display: none;
+        }
+        input[type=button]{
+            border-radius: 5px;
+            background-color:slategrey;
+            border:none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        fieldset{
+            height :350px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="logo">
+
+                <a href="./home.html"> Blog</a>
+
+            </div>
+
+            <nav id="navi">
+                <ul id="topmenu">
+                    <li><a href="./home.html"> HOME</a></li>
+                    <li><a href="./about.html"> ABOUT</a></li>
+                    <li><a href="./posts.html"> POSTS</a></li>
+                    <li><a href="./contact.html"> CONTACT</a></li>
+                    <li><a href="./login.html"> LOGIN</a></li>
+            </nav>
+
+            <div class="theme"> <!-- 페이지 제목-->
+                
+                <div class ="themeButton">
+                    <button class="previous"><img src="./images/left.png" class="previousImage" height="60px" width="60px">  </button>
+                    <h1>Login Page</h1>
+                    <button class="next"><img src="./images/right.png" height="60px" width="60px"> </button>
+                </div>
+               
+                <span ></span>
+            </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    </header>
+    <main class ="contents">
+
+        <div class="explain">
+          
+          <form class="frm" onSubmit="login()">
+            <p style="text-align:center; font-weight:bold; font-size:25px;" >로그인</p>
+              <fieldset>
+                   <div id="formContent">
+            
+                    
+                    
+                    <input id ="id" type="text" placeholder="ID를 입력해주세요."/>
+                    <br>
+                   
+                    <input id ="password" type="password" placeholder="비밀번호를 입력해주세요."/>
+                    <input type="button" value="로그인" onclick="login()">
+                     
+                </div>
+             </fieldset>
+        </form>
+        <div class="loginComplete">
+           <p style="text-align: center;font-weight: bold;">로그인 완료</p> 
+        </div>
+           
+    </div>
+    <hr>
+     </main>
+    
+    <footer>
+        <div id="icons">
+            <ul class = "iconUl">
+                <li><img src="./images/twitter.png" height="50" width="50"></li>
+                <li><img src="./images/insta.jpeg" height="50" width="50"></li>
+                <li><img src="./images/talk.png" height="50" width="50"></li>
+                <li><img src="./images/line.png" height="50" width="50"></li>
+            </ul>
+        </div>
+    </footer>
+
+</main>
+
+    <script>
+        let frm = document.querySelector(".frm");
+        let completeFrm = document.querySelector(".loginComplete");
+        function login(){
+           let str = ["`","`","!","@","#","$","%","^","&","*","(",")","-","=","+"];
+           let check="";
+           for(let i=0; i<str.length; i++){
+                 check = frm.password.value.includes(str[i]);
+                 if(check ==true){
+                    break;
+                 }
+           }
+           
+           if(frm.id.value.length <4){
+                alert("ID를 4글자 이상 입력해주세요.");
+                frm.id.focus();
+
+            }
+            else if(frm.password.value.length<6){
+                alert("비밀번호를 6글자 이상 입력해주세요.");
+                frm.password.focus();
+            } 
+           // else if (!check ){
+         //       alert("특수문자를 포함시켜주세요.")
+          // }  
+            else if (frm.id.value!="aaaa" && frm.password.value!="123456"){
+                alert("아이디나 비밀번호를 잘못입력하였습니다.");
+                frm.id.focus();
+           }
+         
+           
+            else if(frm.id.value=="aaaa" && frm.password.value=="123456"){
+           
+                frm.style.display ="none";
+                completeFrm.style.display ="block"; 
+            }
+            
+    }
+        
+
+        </script>
+    <script src="./js/nav.js"></script>
+</body>
+</html>

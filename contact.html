@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="./css/nav.css">
+    <link rel="styleSheet" href="./css/contents.css">
+    <link rel="styleSheet" href="./css/footer.css">
+    <link rel="styleSheet" href="./css/form.css">
+    <link rel="icon" href="./images/favicon.ico">
+ 
+
+    <style>
+        #contents p {
+            text-align: center;
+            font-weight: bold; 
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="logo">
+
+                <a href="./home.html"> Blog</a>
+
+            </div>
+
+            <nav id="navi">
+                <ul id="topmenu">
+                    <li><a href="./home.html"> HOME</a></li>
+                    <li><a href="./about.html"> ABOUT</a></li>
+                    <li><a href="./posts.html"> POSTS</a></li>
+                    <li><a href="./contact.html"> CONTACT</a></li>
+                    <li><a href="./login.html"> LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme"> <!-- 페이지 제목-->
+                
+                <div class ="themeButton">
+                    <button class="previous"><img src="./images/left.png" class="previousImage" height="60px" width="60px">  </button>
+                    <h1>Contact Me</h1>
+                    <button class="next"><img src="./images/right.png" height="60px" width="60px"> </button>
+                </div>
+               
+                <span ></span>
+            </div>
+
+    </div>
+    <br>
+    <br>
+    </header>
+
+
+    <main>
+
+        <div id="contents">
+            <p style="font-size: 25px;font-weight:bold">문의사항</p>
+            <form class="frm">
+                <fieldset>
+                <div id = "formContent">
+                    <label for="name" ></label>
+                    <input type="text" placeholder="이름을 입력하세요." required><br>
+                    <label for="email" ></label>
+                    <input type="email" placeholder="이메일을 입력하세요." required><br>
+                    <label for="number" ></label>
+                    <input type="text" placeholder="010 - 0000 - 0000" required><br>
+                    <label for="textarea" ></label>
+                    <textarea cols="46" rows="10" placeholder="메시지를 입력하세요" required></textarea>
+                    <input type="submit" value="보내기">
+                </div>
+            </fieldset>
+            </form>
+        </div>
+ 
+    </main>
+    <hr>
+  
+    <footer>
+        <div id="icons">
+            <ul class = "iconUl">
+                <li><img src="./images/twitter.png" height="50" width="50"></li>
+                <li><img src="./images/insta.jpeg" height="50" width="50"></li>
+                <li><img src="./images/talk.png" height="50" width="50"></li>
+                <li><img src="./images/line.png" height="50" width="50"></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/nav.js"></script>
+
+</body>
+
+    
+</html>

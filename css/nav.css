@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@300&display=swap');
+     
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Noto Sans KR', sans-serif;
+   
+}
+body{
+    margin :0px;
+}
+
+#container{
+   
+    height:200px;
+    width: 100%;
+    background: url(../images/man1.png) no-repeat;
+    background-size : auto;
+    background-attachment: fixed;
+   
+}
+
+#container{
+    height:400px;
+
+}
+#navi{
+    height: 80px;
+   margin:0px;
+   padding:0px;
+   background-color:white;
+   ;
+   
+}
+#navi ul{
+    margin:0px;
+    float:right;
+    list-style: none;
+    text-align: center;
+   
+}
+#logo{
+    float:left;
+    margin:5px;
+    padding :10px
+}
+
+
+#navi ul li{
+    float: left;
+    padding :10px;
+    margin : 15px 20px;
+
+}
+
+
+#navi ul li:hover{
+    background-color:#FF8200;
+}
+.theme h1{
+    color: #fff;
+}
+#logo a{
+    font-weight: bold;
+    font-size:30px;
+    color :black;
+    text-decoration: none;
+
+   
+}
+#navi ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.theme{
+    clear:right;
+   height:150px;
+   width:100%;
+   text-align: center;
+   margin :20px auto;
+   
+}
+
+.theme span{
+    color:#fff;
+}
+
+
+.themeButton{
+
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.themeButton button{
+   /* background-color:rgb(84,126,171); */
+   background-color:transparent; /* 배경색 투명 */
+    border: none;
+    cursor: pointer;
+ 
+  
+}
+.themeButton h1{
+   margin: 10px auto;
+   padding: 80px;
+   
+   font-size:50px;
+   color: black;
+}

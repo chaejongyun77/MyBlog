@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="./css/nav.css">
+    <link rel="styleSheet" href="./css/contents.css">
+    <link rel="styleSheet" href="./css/footer.css">
+    <link rel="icon" href="./images/favicon.ico">
+ 
+    
+    <style>
+        .explain{
+            border : 1px solid #ccc;
+            height: 550px;
+           
+        }
+        .frm div input{
+            float:left;
+            margin : 10px 10px;
+            padding :10px;
+            width: 580px;
+            height: 50 px;
+            border:none;
+        }
+        .textarea{
+            height: 400px;
+            width:580px;
+            padding:10px;
+            border: none;
+            margin: 10px 10px;
+            resize: none; /* 사용자가 크기조절 x*/
+            
+        }
+        .submitWrite{
+            width:50px;
+            height: 30px;
+            float:right;
+            margin-right:5px;
+            border: none;
+            border-radius: 10%;
+            font-weight: bold;
+        }
+        .submitWrite:hover{
+            background-color: #FF8200;
+            cursor: pointer;
+        }
+        .writeTitle{
+            display: flex;
+            justify-content: center;
+            margin : 0px auto;
+            font-size : 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="logo"> <!-- 로고 아이콘-->
+
+                <a href="./home.html"> Blog</a>
+
+            </div>
+
+            <nav id="navi"> <!-- 네비게이션 바-->
+                <div class="navul">
+                <ul id="topmenu">
+                    <li><a href="./home.html"> HOME</a></li>
+                    <li><a href="./about.html"> ABOUT</a></li>
+                    <li><a href="./posts.html"> POSTS</a></li>
+                    <li><a href="./contact.html"> CONTACT</a></li>
+                    <li><a href="./login.html"> LOGIN</a></li>
+                </ul>
+            </div>
+            </nav>
+
+            <div class="theme"> <!-- 페이지 제목-->
+                <span>
+                    <h1>Write</h1>
+                </span>
+                <span ></span>
+            </div>
+    </div>
+
+
+    <br>
+    <br>
+    </header>
+
+    <main class ="contents">
+        <span class="writeTitle">글 작성</span>
+        <div class="explain">
+
+            
+          <form class="frm">
+       
+                   <div id="formContent">
+            
+                    
+                    <label for="name"></label>
+                    <input type="text" placeholder="제목을 입력해주세요."/>
+                    <hr>
+
+                    <label for="textarea" ></label>
+                    <textarea class= "textarea" cols="85" rows="10" placeholder="내용을 작성해주세요."></textarea>
+                    
+                    <hr>
+                </div>
+                <button class="submitWrite">저장 </button>
+                <input class="submitWrite" type="submit" value="작성">
+           
+        </form>
+           
+    </div>
+    <hr>
+     </main>
+
+    <footer> <!-- 하단 아이콘-->
+      
+        <div id="icons">
+            <ul class = "iconUl">
+                <li><img src="./images/twitter.png" height="50" width="50"></li>
+                <li><img src="./images/insta.jpeg" height="50" width="50"></li>
+                <li><img src="./images/talk.png" height="50" width="50"></li>
+                <li><img src="./images/line.png" height="50" width="50"></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+    
+</body>
+</html>
